@@ -1,4 +1,4 @@
-import Convidado from "./convidado";
+import Convidado from './Convidado';
 
 export default interface Evento{
     id: string;

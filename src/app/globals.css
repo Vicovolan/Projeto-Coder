@@ -21,7 +21,34 @@ body {
 }
 
 @layer components {
-  .container{
-      @apply mx-auto px-4 max-w-7xl;
+  .container {
+    @apply mx-auto px-4 max-w-7xl;
+  }
+
+  .botao {
+    @apply flex justify-center items-center;
+    @apply gap-2 rounded-md px-9 h-9;
+    @apply text-sm font-semibold text-white;
+  }
+
+  .botao.azul {
+    @apply bg-blue-500 text-white;
+  }
+  .botao.azul:hover {
+    @apply bg-blue-600;
+  }
+
+  .botao.verde {
+    @apply bg-green-500;
+  }
+  .botao.verde:hover {
+    @apply bg-green-600;
+  }
+
+   .botao.vermelho{
+    @apply bg-red-500;
+  }
+  .botao.vermelho:hover {
+    @apply bg-red-600;
   }
 }

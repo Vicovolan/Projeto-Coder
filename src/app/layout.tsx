@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {Inter} from 'next/font/google'
+import { Inter } from "next/font/google";
 
 const fonte = Inter({
   subsets: ["latin"],
-})
+});
 
 export const metadata: Metadata = {
   title: "Seu evento começa aqui",
@@ -18,11 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body
-        className={fonte.className}
-      >
-        {children}
-      </body>
+      <body className={fonte.className}>{children}</body>
     </html>
   );
 }

@@ -1,7 +1,7 @@
 export default class Senha{
-    static criar(tamanho: number = 15): string{
+    static nova(tamanho: number = 15): string{
         const minusculas = 'abcdefghijklmnopqrstuvwxyz'
-        const maisculas = minusculas.toUpperCase
+        const maisculas = minusculas.toUpperCase()
         const numeros = "0123456789"
         const especiais = "!@#$%&*"
         const grupos = [minusculas, maisculas, numeros, especiais]
@@ -16,4 +16,4 @@ export default class Senha{
     }
 }
 
-console.log(Senha.criar());
+//console.log(Senha.criar());  gera senha com a qtd de caracteres que pedi
